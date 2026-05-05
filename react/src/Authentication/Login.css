@@ -1,0 +1,66 @@
+@import "/.login.css";
+
+.login-container {
+  width: 350px;
+  margin: 50px auto;
+  font-family: Arial, sans-serif;
+}
+
+h2 {
+  font-weight: bold;
+}
+
+.light-text {
+  font-weight: normal;
+  color: gray;
+}
+
+.input-box {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+.country-code {
+  margin-right: 10px;
+  color: gray;
+}
+
+.input-box input {
+  border: none;
+  outline: none;
+  flex: 1;
+}
+
+.terms {
+  display: flex;
+  margin-top: 15px;
+  font-size: 12px;
+}
+
+.terms input {
+  margin-right: 8px;
+}
+
+.link {
+  color: red;
+  cursor: pointer;
+}
+
+.continue-btn {
+  width: 100%;
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #9e9e9e;
+  border: none;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.help-text {
+  margin-top: 15px;
+  font-size: 12px;
+}
