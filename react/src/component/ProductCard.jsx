@@ -1,8 +1,11 @@
 import React from 'react'
+import { useContext } from "react";
 import { useNavigate } from 'react-router-dom'
+import { WishlistContext } from "../context/WishlistContext";
 
 function ProductCard({ product }) {
   const navigate = useNavigate()
+  const { addToWishlist } = useContext(WishlistContext);
 
   return (
     <div 
@@ -12,6 +15,10 @@ function ProductCard({ product }) {
         src={product.image} 
         alt={product.title} 
         className="w-full h-40 object-contain bg-gray-100" />
+
+        <button onClick={() => addToWishlist(product)}>
+         ❤️ Wishlist
+        </button>
 
       <h2 className="text-lg font-semibold mt-2">
         {product.title}

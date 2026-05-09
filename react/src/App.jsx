@@ -34,6 +34,7 @@ function App() {
         <Route path='/Bag' element={<Bag />} />
         <Route path='/product/:id' element={<ProductDetails />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/wishlist" element={<Wishlist />} />
       </Routes>
 
       {/*<Container />*/}
