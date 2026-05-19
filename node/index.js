@@ -25,7 +25,7 @@ app.use('/orders', orderRoutes);
  const startServer = async () => {
   try {
     await mongoose.connect(
-      "mongodb+srv://Anjali:1234@cluster0.l0eevlt.mongodb.net/users?appName=Cluster0"
+      "mongodb+srv://Anjali:1234@cluster0.l0eevlt.mongodb.net/?appName=Cluster0"
     );
 
     console.log("Database Connected.................");
